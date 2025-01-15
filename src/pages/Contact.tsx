@@ -17,7 +17,7 @@ function Contact(): JSX.Element {
             target="_blank"
           >
             <Mail color="#141414" strokeWidth={1.5} size={32} />
-            <p>eivind-buodd@hotmail.com</p>
+            <p>eivind@buodd.no</p>
           </a>
         </div>
         {/* LinkedIn */}
