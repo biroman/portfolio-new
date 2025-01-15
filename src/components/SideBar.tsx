@@ -67,6 +67,16 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }): JSX.Element => {
             </NavLink>
           </li>
         </ul>
+        <div className="absolute bottom-2">
+          {" "}
+          <a
+            href="https://github.com/biroman/portfolio-new"
+            target="_blank"
+            className="text-[#5a5a5a] hover:text-white"
+          >
+            Github til denne siden
+          </a>
+        </div>
       </div>
     </aside>
   );
