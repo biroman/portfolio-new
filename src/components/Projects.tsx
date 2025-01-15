@@ -1,4 +1,5 @@
 import easyplay from "../assets/projects/easyplay.png";
+import msextension from "../assets/projects/msextension.png";
 import msscraper from "../assets/projects/msscraper.png";
 import keyscraper from "../assets/projects/keyscraper.png";
 import chatlogs from "../assets/projects/chatlogs.png";
@@ -47,6 +48,8 @@ const projects = [
       "Å utvikle en effektiv web skraping-løsning som kunne håndtere den ønskede datainnsamlingen.",
       "Å designe et minimalistisk grensesnitt som fortsatt formidlet all nødvendig informasjon.",
     ],
+    figma:
+      "https://www.figma.com/design/t4jakd4vShdmTx2AgvZSuV/Untitled?node-id=0-1&t=afTyfj9rinNLLZkT-1",
   },
   {
     name: "Key Scraper",
@@ -73,14 +76,21 @@ const projects = [
       "Å gjenskape en tilsvarende Twitch-chat opplevelsen med brukerfarger og chat funksjoner.",
     ],
   },
+  {
+    name: "Nettleserutvidelse",
+    tools: [javascript],
+    image: msextension,
+    description:
+      "Det er et nettleserspill som har et problem der mange innstillinger og informasjon er skjult, og det kan være vanskelig å finne. Denne utvidelsen gjør det lettere ved å hente frem relevant informasjon, slik at du alltid har den lett tilgjengelig. Den er plassert utenfor skjermen, men har en liten indikatorsirkel som du kan klikke på. Når du gjør det, glir informasjonen inn som en sidebar på siden av skjermen.",
+  },
 ];
 
 function Projects() {
   const listProjects = projects.map((project) => (
     <div className="container flex flex-col md:flex-row mt-8 divide-y md:divide-y-0 md:divide-x divide-[#313235]">
-      <div className="w-full p-4">
+      <div className=" w-full p-4 justify-center">
         <img
-          className="shadow-xl rounded-lg w-full  object-contain"
+          className="shadow-xl rounded-lg object-contain mx-auto"
           src={project.image}
           alt={project.name}
           title={project.name}
@@ -92,7 +102,7 @@ function Projects() {
           <div className="flex mt-2 md:mt-0">
             {project.tools.map((tool, index) => (
               <img
-                className="mr-4 md:ml-4 md:mr-0 h-6 md:h-8"
+                className="mr-4 md:ml-4 md:mr-0 h-6 md:h-8 object-contain max-h-[300px]"
                 key={index}
                 src={tool}
                 alt={`Tool ${index + 1}`}
@@ -102,9 +112,13 @@ function Projects() {
         </div>
         <div className="mt-4">
           <p className="text-[#5d5d60]">{project.description}</p>
-          <p className="font-bold mt-4">Utfordringer</p>
+          {project.challenges ? (
+            <p className="font-bold mt-4">Utfordringer</p>
+          ) : (
+            ""
+          )}
           <ul className="list-disc">
-            {project.challenges.map((challenge, index) => (
+            {project.challenges?.map((challenge, index) => (
               <li className="ml-8" key={index}>
                 <span className="text-[#5d5d60]">{challenge}</span>
               </li>
@@ -126,6 +140,16 @@ function Projects() {
             <a href={project.github} target="_blank">
               <div className="mt-8 w-20 items-center text-center p-2 text-white hover:text-black rounded-lg bg-black hover:bg-white group ">
                 Github
+              </div>
+            </a>
+          ) : (
+            ""
+          )}
+
+          {project.figma ? (
+            <a href={project.figma} target="_blank">
+              <div className="mt-8 w-20 items-center text-center p-2 text-white hover:text-black rounded-lg bg-black hover:bg-white group ">
+                Figma
               </div>
             </a>
           ) : (
