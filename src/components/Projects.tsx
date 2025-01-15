@@ -41,10 +41,10 @@ const projects = [
     tools: [figma, javascript],
     image: dashboard,
     description:
-      "Jeg har utviklet en prototyp for et dashboard som visualiserer omfattende datasett hentet fra en nettside uten tilgjengelig API. Ved å bygge en egen datainnsamlingsløsning basert på web scraping, klarte jeg å samle inn og strukturere dataene før de ble lagret i MongoDB. Det resulterende dashbordet tilbyr en intuitiv og minimalistisk brukergrensesnitt som gjør det enkelt for brukeren å utforske og forstå den innhentede informasjonen.",
+      "Jeg har utviklet en prototyp for et dashboard som visualiserer omfattende datasett hentet fra en nettside uten tilgjengelig API. Ved å bygge en egen datainnsamlingsløsning basert på web skraping, klarte jeg å samle inn og strukturere dataene før de ble lagret i MongoDB. Det resulterende dashbordet tilbyr en intuitiv og minimalistisk brukergrensesnitt som gjør det enkelt for brukeren å utforske og forstå den innhentede informasjonen.",
     challenges: [
       "Finne en god måten å presentere all data på, slik at det både ble intuitivt for brukerne og unngikk unødvendig visuell støy.",
-      "Å utvikle en effektiv web scraping-løsning som kunne håndtere den ønskede datainnsamlingen.",
+      "Å utvikle en effektiv web skraping-løsning som kunne håndtere den ønskede datainnsamlingen.",
       "Å designe et minimalistisk grensesnitt som fortsatt formidlet all nødvendig informasjon.",
     ],
   },
