@@ -13,7 +13,7 @@ function Contact(): JSX.Element {
         <div>
           <a
             className="flex items-center space-x-2"
-            href="mailto:eivind-buodd@hotmail.com"
+            href="mailto:eivind@buodd.no"
             target="_blank"
           >
             <Mail color="#141414" strokeWidth={1.5} size={32} />
