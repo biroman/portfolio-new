@@ -1,4 +1,5 @@
 import easyplay from "../assets/projects/easyplay.png";
+import msscraper from "../assets/projects/msscraper.png";
 import keyscraper from "../assets/projects/keyscraper.png";
 import chatlogs from "../assets/projects/chatlogs.png";
 import dashboard from "../assets/projects/dashboard.png";
@@ -24,17 +25,16 @@ const projects = [
     ],
   },
   {
-    name: "Key Scraper",
-    tools: [python],
-    image: keyscraper,
+    name: "Database over alle spillere",
+    tools: [javascript, python],
+    image: msscraper,
     description:
-      "Jeg har utviklet en Python-basert bot som kontinuerlig skanner opptil 20 Twitch-chat'er og nye Reddit-innlegg for å identifisere produktnøkler til spillet Path Of Exile 2. Ved å bruke avanserte tekstbehandlingsteknikker, oppdager boten potensielle nøkler i sanntid. Når en nøkkel er funnet, forsøker boten umiddelbart å innløse den. Ved mislykkede innløsninger logger boten feilen og fortsetter søket. Boten er designet for å være robust og effektiv.",
+      "Jeg utviklet en Python-basert webskraper hvor jeg kunne definere spesifikke kriterier for å samle inn data. Skriptet gikk systematisk gjennom alle registrerte brukere på mafiaspillet.no, formaterte informasjonen på en ryddig måte og lastet den automatisk opp til en GitHub-repository. For å visualisere dataene, opprettet jeg en nettside som hentet informasjonen direkte fra GitHub og presenterte den på en brukervennlig måte.",
     challenges: [
-      "Å automatisere innløsningsprosessen med bruk av cookies og session-ID.",
-      "Å sikre at boten kunne håndtere ulike formater og plasseringer av produktnøkler i tekst.",
-      "Å filtrere ut Reddit poster som mest sannsynlig ikke ville inneholde nøkler",
-      "Å opprettholde høy ytelse og stabilitet i boten var viktig for å sikre kontinuerlig søk etter nøkler.",
+      "Jeg brukte mest tid på å finne ut hvordan jeg kunne identifisere alle registrerte brukere. Etter mye undersøkelser og analyser av nettverkstrafikken oppdaget jeg at når nettsiden oppdateres, blir det sendt en GET-forespørsel som returnerer en liste over alle brukernavn i ren tekst. Til slutt automatiserte jeg prosessen ved å hente denne listen direkte, og lot programmet gå gjennom hver enkelt profil for å samle inn den nødvendige informasjonen.",
     ],
+    link: "https://scrap-beta.vercel.app/",
+    github: "https://github.com/biroman/scraper",
   },
   {
     name: "Dashboard",
@@ -46,6 +46,19 @@ const projects = [
       "Finne en god måten å presentere all data på, slik at det både ble intuitivt for brukerne og unngikk unødvendig visuell støy.",
       "Å utvikle en effektiv web scraping-løsning som kunne håndtere den ønskede datainnsamlingen.",
       "Å designe et minimalistisk grensesnitt som fortsatt formidlet all nødvendig informasjon.",
+    ],
+  },
+  {
+    name: "Key Scraper",
+    tools: [python],
+    image: keyscraper,
+    description:
+      "Jeg har utviklet en Python-basert bot som kontinuerlig skanner opptil 20 Twitch-chat'er og nye Reddit-innlegg for å identifisere produktnøkler til spillet Path Of Exile 2. Ved å bruke avanserte tekstbehandlingsteknikker, oppdager boten potensielle nøkler i sanntid. Når en nøkkel er funnet, forsøker boten umiddelbart å innløse den. Ved mislykkede innløsninger logger boten feilen og fortsetter søket. Boten er designet for å være robust og effektiv.",
+    challenges: [
+      "Å automatisere innløsningsprosessen med bruk av cookies og session-ID.",
+      "Å sikre at boten kunne håndtere ulike formater og plasseringer av produktnøkler i tekst.",
+      "Å filtrere ut Reddit poster som mest sannsynlig ikke ville inneholde nøkler",
+      "Å opprettholde høy ytelse og stabilitet i boten var viktig for å sikre kontinuerlig søk etter nøkler.",
     ],
   },
   {
@@ -67,7 +80,7 @@ function Projects() {
     <div className="container flex flex-col md:flex-row mt-8 divide-y md:divide-y-0 md:divide-x divide-[#313235]">
       <div className="w-full p-4">
         <img
-          className="shadow-xl rounded-lg w-full h-full object-contain"
+          className="shadow-xl rounded-lg w-full  object-contain"
           src={project.image}
           alt={project.name}
           title={project.name}
@@ -97,6 +110,27 @@ function Projects() {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="flex gap-4">
+          {project.link ? (
+            <a href={project.link} target="_blank">
+              <div className="mt-8 w-32 items-center text-center p-2 text-white hover:text-black rounded-lg bg-black hover:bg-white group ">
+                Åpne nettside
+              </div>
+            </a>
+          ) : (
+            ""
+          )}
+
+          {project.github ? (
+            <a href={project.github} target="_blank">
+              <div className="mt-8 w-20 items-center text-center p-2 text-white hover:text-black rounded-lg bg-black hover:bg-white group ">
+                Github
+              </div>
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
