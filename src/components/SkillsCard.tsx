@@ -53,21 +53,27 @@ const skills = [
 ];
 function SkillsCard() {
   const listSkills = skills.map((skill) => (
-    <div className="flex mt-4 bg-[#F5F5F8] rounded-lg items-center justify-center flex-col">
-      <a>
+    <div
+      key={skill.name}
+      className="flex mt-4 bg-[#F5F5F8] rounded-lg items-center justify-center flex-col p-4"
+    >
+      <div className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center">
         <img
-          className="p-6 rounded-t-lg"
+          className="max-w-full max-h-full object-contain"
           src={skill.icon}
-          alt="product image"
+          alt={skill.name}
         />
-      </a>
-      <div className="px-5 pb-5">
-        <h5 className="text-xl font-semibold tracking-tight">{skill.name}</h5>
+      </div>
+      <div className="mt-2 md:mt-4">
+        <h5 className="text-lg md:text-xl font-semibold tracking-tight text-center">
+          {skill.name}
+        </h5>
       </div>
     </div>
   ));
+
   return (
-    <div className="grid lg:grid-cols-5 sm:grid-cols-2 gap-x-4">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
       {listSkills}
     </div>
   );

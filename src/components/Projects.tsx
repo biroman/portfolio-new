@@ -64,22 +64,22 @@ const projects = [
 
 function Projects() {
   const listProjects = projects.map((project) => (
-    <div className="container flex mt-8 divide-[#313235] divide-x">
+    <div className="container flex flex-col md:flex-row mt-8 divide-y md:divide-y-0 md:divide-x divide-[#313235]">
       <div className="w-full p-4">
         <img
           className="shadow-xl rounded-lg w-full h-full object-contain"
           src={project.image}
-          alt="hei"
-          title="Hei"
+          alt={project.name}
+          title={project.name}
         />
       </div>
-      <div className="flex flex-col ml-8 pl-2 justify-center w-full">
-        <div className="flex">
-          <h1 className="font-bold text-3xl">{project.name}</h1>
-          <div className="flex">
+      <div className="flex flex-col md:ml-8 p-4 md:pl-8 justify-center w-full">
+        <div className="flex flex-col md:flex-row items-start md:items-center">
+          <h1 className="font-bold text-2xl md:text-3xl">{project.name}</h1>
+          <div className="flex mt-2 md:mt-0">
             {project.tools.map((tool, index) => (
               <img
-                className="ml-4 h-8"
+                className="mr-4 md:ml-4 md:mr-0 h-6 md:h-8"
                 key={index}
                 src={tool}
                 alt={`Tool ${index + 1}`}
@@ -87,12 +87,12 @@ function Projects() {
             ))}
           </div>
         </div>
-        <div className="mt-2">
+        <div className="mt-4">
           <p className="text-[#5d5d60]">{project.description}</p>
           <p className="font-bold mt-4">Utfordringer</p>
           <ul className="list-disc">
             {project.challenges.map((challenge, index) => (
-              <li className=" ml-8" key={index}>
+              <li className="ml-8" key={index}>
                 <span className="text-[#5d5d60]">{challenge}</span>
               </li>
             ))}
