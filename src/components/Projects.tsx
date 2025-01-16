@@ -81,7 +81,7 @@ const projects = [
     tools: [javascript],
     image: msextension,
     description:
-      "Det er et nettleserspill som har et problem der mange innstillinger og informasjon er skjult, og det kan være vanskelig å finne. Denne utvidelsen gjør det lettere ved å hente frem relevant informasjon, slik at du alltid har den lett tilgjengelig. Den er plassert utenfor skjermen, men har en liten indikatorsirkel som du kan klikke på. Når du gjør det, glir informasjonen inn som en sidebar på siden av skjermen.",
+      "Det er et nettleserspill som har et problem der mange innstillinger og informasjon er skjult, og det kan være vanskelig å finne. Denne utvidelsen gjør det lettere ved å hente frem relevant informasjon, slik at du alltid har den lett tilgjengelig. Den er plassert utenfor skjermen, men har en liten indikatorpil som du kan klikke på. Når du gjør det, glir informasjonen inn som en sidebar på siden av skjermen.",
   },
 ];
 
