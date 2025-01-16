@@ -24,7 +24,7 @@ function Contact(): JSX.Element {
         <div>
           <a
             className="flex items-center space-x-2"
-            href="https://www.linkedin.com/in/eivind-buodd-6741a7315/"
+            href="https://www.linkedin.com/in/eivind-buodd"
             target="_blank"
           >
             <Linkedin color="#141414" strokeWidth={1.5} size={32} />
