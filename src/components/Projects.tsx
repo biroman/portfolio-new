@@ -1,10 +1,12 @@
 import easyplay from "../assets/projects/easyplay.png";
+import unity from "../assets/projects/unity.gif";
 import msextension from "../assets/projects/msextension.png";
 import msscraper from "../assets/projects/msscraper.png";
 import keyscraper from "../assets/projects/keyscraper.png";
 import chatlogs from "../assets/projects/chatlogs.png";
 import dashboard from "../assets/projects/dashboard.png";
 import firebase from "../assets/skills/firebase.png";
+import csharp from "../assets/skills/csharp.png";
 import nextjs from "../assets/skills/nextjs.png";
 import python from "../assets/skills/python.png";
 import reactjs from "../assets/skills/reactjs.png";
@@ -36,6 +38,18 @@ const projects = [
     ],
     link: "https://scrap-beta.vercel.app/",
     github: "https://github.com/biroman/scraper",
+  },
+  {
+    name: "Goblin Hunter",
+    tools: [csharp],
+    image: unity,
+    description: `Jeg hadde valgfaget "Spilldesign" hvor vi skulle utvikle et spill i Unity, programmert i C#. Sammen med en studiekamerat laget vi et spill inspirert av Vampire Survivor. I spillet beveger du deg rundt, bekjemper monstre, finner nye våpen og levler opp for å bli sterkere.`,
+    challenges: [
+      "Eksporterte animasjoner fra et animasjonsverktøy vi brukte fungerte dårlig i Unity, noe som førte til at vi måtte lage animasjoner via kode, en litt tidkrevende prosess",
+      "Manglende kollisjon mellom ulike actors i spillet førte til situasjoner der spillfiguren kunne havne oppå fiender.",
+      "Å lage egendefinerte 3D-modeller og teksturer tok lengre tid, men ga oss bedre kontroll over spillets design.",
+    ],
+    github: "https://github.com/biroman/exam-unity",
   },
   {
     name: "Dashboard",
@@ -75,6 +89,7 @@ const projects = [
       "Å integrere emotes fra flere tredjepartsleverandører sømløst på tvers av plattformene.",
       "Å gjenskape en tilsvarende Twitch-chat opplevelsen med brukerfarger og chat funksjoner.",
     ],
+    github: "https://github.com/biroman/xqc-chatlogs-react",
   },
   {
     name: "Nettleserutvidelse",
