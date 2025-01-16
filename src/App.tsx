@@ -29,7 +29,7 @@ function App() {
         {/* Main content */}
         <div id="main" className="flex-1 p-4 md:p-6 md:ml-64 mt-16 md:mt-0">
           <Routes>
-            <Route path="/" element={<Navigate to="/about" />} />
+            <Route path="/" element={<Navigate to="/about" replace />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
