@@ -19,7 +19,7 @@ i18n
       order: ["querystring", "localStorage", "navigator"],
       lookupQuerystring: "lng",
       lookupLocalStorage: "i18nextLng",
-      caches: ["localStorage"],
+      caches: [],
     },
     debug: true,
     interpolation: {
