@@ -3,6 +3,7 @@ import avatar from "../assets/avatar2.png";
 import { NavLink } from "react-router-dom";
 import "../il8n";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface SideBarProps {
   isOpen: boolean;
@@ -77,6 +78,9 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }): JSX.Element => {
             </NavLink>
           </li>
         </ul>
+        <div className="absolute bottom-14 left-8">
+          <LanguageSwitcher />
+        </div>
         <div className="absolute bottom-2 left-8">
           {" "}
           <a
