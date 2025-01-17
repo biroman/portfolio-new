@@ -77,12 +77,12 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }): JSX.Element => {
             </NavLink>
           </li>
         </ul>
-        <div className="absolute bottom-2 left-8">
+        <div className="absolute inset-x-0 bottom-0 flex items-center justify-center mb-6">
           {" "}
           <a
             href="https://github.com/biroman/portfolio-new"
             target="_blank"
-            className="text-[#5a5a5a] hover:text-white"
+            className="text-[#5a5a5a] text-sm hover:text-white "
           >
             {t("sidebar.footer")}
           </a>
