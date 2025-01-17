@@ -12,7 +12,7 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: "../public/il8n.js",
+      loadPath: "/il8n.js",
     },
     resources: {
       no: {
