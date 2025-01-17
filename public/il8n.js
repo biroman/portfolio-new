@@ -11,6 +11,9 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    backend: {
+      loadPath: "../public/il8n.js",
+    },
     resources: {
       no: {
         translation: {
