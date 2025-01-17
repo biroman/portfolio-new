@@ -26,7 +26,7 @@
       "tools": ["figma", "firebase", "nextjs"]
     },
     "msScraper": {
-      "name": "Tabell Over Brukere",
+      "name": "Bruker Tabell",
       "description": "Jeg utviklet en Python-basert webskraper hvor jeg kunne definere spesifikke kriterier for å samle inn data. Skriptet gikk systematisk gjennom alle registrerte brukere på mafiaspillet.no, formaterte informasjonen på en ryddig måte og lastet den automatisk opp til en GitHub-repository. For å visualisere dataene, opprettet jeg en nettside som hentet informasjonen direkte fra GitHub og presenterte den på en brukervennlig måte.",
       "challenges": [
         "Jeg brukte mest tid på å finne ut hvordan jeg kunne identifisere alle registrerte brukere. Etter mye undersøkelser og analyser av nettverkstrafikken oppdaget jeg at når nettsiden oppdateres, blir det sendt en GET-forespørsel som returnerer en liste over alle brukernavn i ren tekst. Til slutt automatiserte jeg prosessen ved å hente denne listen direkte, og lot programmet gå gjennom hver enkelt profil for å samle inn den nødvendige informasjonen."
