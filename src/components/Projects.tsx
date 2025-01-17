@@ -39,7 +39,7 @@ const Projects: FC = () => {
               <h1 className="font-bold text-2xl md:text-3xl">
                 {t(`projects.${projectId}.name`)}
               </h1>
-              <div className="flex mt-2 md:mt-0">
+              <div className="flex mt-2 md:mt-0 md:flex-col">
                 {Array.isArray(
                   t(`projects.${projectId}.tools`, { returnObjects: true })
                 )
