@@ -5,30 +5,13 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  function LanguageDebug() {
-    const { i18n } = useTranslation();
-
-    return (
-      <div className="fixed top-0 right-0 m-4 p-4 bg-white text-black shadow rounded">
-        <p>Current language: {i18n.language}</p>
-        <p>Resolved language: {i18n.resolvedLanguage}</p>
-        <p>Loading: {i18n.isInitialized ? "No" : "Yes"}</p>
-        <pre className="text-xs">
-          {JSON.stringify(i18n.options.supportedLngs, null, 2)}
-        </pre>
-      </div>
-    );
-  }
-
   return (
     <BrowserRouter>
       <div className="flex flex-col md:flex-row h-screen bg-white relative">
-        {LanguageDebug()}
         {/* Mobile menu button */}
         <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
