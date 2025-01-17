@@ -1,6 +1,8 @@
 import React from "react";
-import avatar from "../assets/avatar.jpg";
+import avatar from "../assets/avatar2.png";
 import { NavLink } from "react-router-dom";
+import "../utils/il8n";
+import { useTranslation } from "react-i18next";
 
 interface SideBarProps {
   isOpen: boolean;
@@ -8,6 +10,8 @@ interface SideBarProps {
 }
 
 const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
     <aside
       className={`fixed md:fixed top-0 left-0 z-40 w-64 h-screen transition-transform ${
@@ -37,7 +41,9 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }): JSX.Element => {
               }
               to="/about"
             >
-              <span className="flex-1 ms-3 whitespace-nowrap">Om</span>
+              <span className="flex-1 ms-3 whitespace-nowrap">
+                {t("sidebar.about")}
+              </span>
             </NavLink>
           </li>
           <li>
@@ -50,7 +56,9 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }): JSX.Element => {
               }
               to="/portfolio"
             >
-              <span className="flex-1 ms-3 whitespace-nowrap">Portefølje</span>
+              <span className="flex-1 ms-3 whitespace-nowrap">
+                {t("sidebar.portfolio")}
+              </span>
             </NavLink>
           </li>
           <li>
@@ -63,18 +71,20 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }): JSX.Element => {
               }
               to="/contact"
             >
-              <span className="flex-1 ms-3 whitespace-nowrap">Kontakt</span>
+              <span className="flex-1 ms-3 whitespace-nowrap">
+                {t("sidebar.contact")}
+              </span>
             </NavLink>
           </li>
         </ul>
-        <div className="absolute bottom-2">
+        <div className="absolute bottom-2 left-8">
           {" "}
           <a
             href="https://github.com/biroman/portfolio-new"
             target="_blank"
             className="text-[#5a5a5a] hover:text-white"
           >
-            Github til denne siden
+            {t("sidebar.footer")}
           </a>
         </div>
       </div>

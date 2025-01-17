@@ -19,6 +19,7 @@
 
 body {
   font-family: "Geist", serif;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 #main {

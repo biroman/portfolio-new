@@ -1,9 +1,12 @@
 import Projects from "../components/Projects";
+import { useTranslation } from "react-i18next";
 
 function Portfolio(): JSX.Element {
+  const { t } = useTranslation();
+
   return (
     <div className="container flex ml-4 mt-4 h-full flex-col">
-      <span className="text-5xl font-black">Noen av mine Prosjekter</span>
+      <span className="text-5xl font-black">{t("projects.title")}</span>
       <Projects />
     </div>
   );
