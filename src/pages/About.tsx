@@ -6,7 +6,7 @@ function About(): JSX.Element {
   const { t } = useTranslation();
 
   return (
-    <div className="container flex mt-4 h-full flex-col">
+    <div className="container flex h-full flex-col">
       <div className="grow">
         {" "}
         <h1>
@@ -19,7 +19,7 @@ function About(): JSX.Element {
           <p className="mb-3">{t("about.description")}</p>
         </div>
       </div>
-      <div className="mb-8">
+      <div className="">
         <span className="text-4xl font-black">{t("about.skills")}</span>
         <Skills />
       </div>
