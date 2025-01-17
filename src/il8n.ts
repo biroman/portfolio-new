@@ -15,13 +15,22 @@ i18n
     ns: ["common"],
     defaultNS: "common",
     supportedLngs: ["en", "nb"],
+    detection: {
+      order: ["querystring", "localStorage", "navigator"],
+      lookupQuerystring: "lng",
+      lookupLocalStorage: "i18nextLng",
+      caches: ["localStorage"],
+    },
+    debug: true,
     interpolation: {
       escapeValue: false,
     },
-    detection: {
-      order: ["localStorage", "navigator"],
-      caches: ["localStorage"],
-    },
   });
+
+// Log the detected language
+i18n.on("initialized", () => {
+  console.log("Current language:", i18n.language);
+  console.log("Languages:", i18n.languages);
+});
 
 export default i18n;
