@@ -6,7 +6,7 @@ function About(): JSX.Element {
   const { t } = useTranslation();
 
   return (
-    <div className="container flex ml-4 mt-4 h-full flex-col">
+    <div className="container flex mt-4 h-full flex-col">
       <div className="grow">
         {" "}
         <h1>
