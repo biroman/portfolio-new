@@ -21,7 +21,7 @@ i18n
       lookupLocalStorage: "i18nextLng",
       caches: [],
     },
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false,
     },

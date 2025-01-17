@@ -14,6 +14,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }): JSX.Element => {
 
   return (
     <aside
+      id="sidebar"
       className={`fixed md:fixed top-0 left-0 z-40 w-64 h-screen transition-transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } md:translate-x-0`}
