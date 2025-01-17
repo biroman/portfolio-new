@@ -1,13 +1,13 @@
-import htmlcss from "../assets/skills/htmlcss.png";
-import figma from "../assets/skills/figma.png";
-import reactjs from "../assets/skills/reactjs.png";
-import nextjs from "../assets/skills/nextjs.png";
-import javascript from "../assets/skills/javascript.png";
-import nodejs from "../assets/skills/nodejs.png";
-import mongodb from "../assets/skills/mongodb.png";
-import firebase from "../assets/skills/firebase.png";
-import mysql from "../assets/skills/mysql.png";
-import python from "../assets/skills/python.png";
+import htmlcss from "/assets/skills/htmlcss.png";
+import figma from "/assets/skills/figma.png";
+import reactjs from "/assets/skills/reactjs.png";
+import nextjs from "/assets/skills/nextjs.png";
+import javascript from "/assets/skills/javascript.png";
+import nodejs from "/assets/skills/nodejs.png";
+import mongodb from "/assets/skills/mongodb.png";
+import firebase from "/assets/skills/firebase.png";
+import mysql from "/assets/skills/mysql.png";
+import python from "/assets/skills/python.png";
 
 const skills = [
   {
