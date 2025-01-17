@@ -36,7 +36,7 @@ const Projects: FC = () => {
           </div>
           <div className="flex flex-col md:ml-8 p-4 md:pl-8 justify-center w-full">
             <div className="flex flex-row md:flex-row items-start md:items-center">
-              <h1 className="font-bold text-2xl md:text-3xl">
+              <h1 className="font-bold text-xl md:text-3xl">
                 {t(`projects.${projectId}.name`)}
               </h1>
               <div className="flex mt-1 ml-2 md:mt-0 md:ml-0">

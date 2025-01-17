@@ -26,7 +26,7 @@
       "tools": ["figma", "firebase", "nextjs"]
     },
     "msScraper": {
-      "name": "Database of All Players",
+      "name": "Table Of Users",
       "description": "I developed a Python-based web scraper where I could define specific criteria to collect data. The script systematically went through all registered users on mafiaspillet.no, formatted the information in an organized manner, and automatically uploaded it to a GitHub repository. To visualize the data, I created a website that fetched the information directly from GitHub and presented it in a user-friendly way.",
       "challenges": [
         "I spent most of the time figuring out how to identify all registered users. After much research and analysis of network traffic, I discovered that when the website updates, a GET request is sent that returns a list of all usernames in plain text. Eventually, I automated the process by fetching this list directly and letting the program go through each profile to collect the necessary information."
