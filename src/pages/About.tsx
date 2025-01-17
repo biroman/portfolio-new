@@ -1,5 +1,5 @@
 import Skills from "../components/Skills";
-import "../../public/il8n";
+import "../il8n";
 import { useTranslation } from "react-i18next";
 
 function About(): JSX.Element {

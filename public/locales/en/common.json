@@ -1,0 +1,82 @@
+{
+  "sidebar": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "footer": "GitHub link for this page"
+  },
+  "about": {
+    "title1": "I am ",
+    "title2": "UX Designer & Front-End Developer",
+    "description": "I am a recent graduate interactive designer with a strong interest in UX design. Through my studies, I gained solid experience with real projects for various companies, which gave me a good understanding of user needs and the design process. I enjoy challenging tasks that contribute to my professional development and greatly appreciate being part of a creative team.",
+    "skills": "My Skills"
+  },
+  "projects": {
+    "title": "Some of My Projects",
+    "viewWebsite": "Open Website",
+    "challenges": "Challenges",
+    "easyplay": {
+      "name": "Bachelor Project",
+      "description": "We developed an intuitive dashboard that gives court administrators a complete overview of court utilization. Using an advanced algorithm and clear visualizations such as bar charts and tables, users quickly gain insight into activity data. The design is optimized for easy navigation and follows EasyPlay's visual identity. Our goal was to create a user-friendly tool that simplifies administration and provides data-driven decision-making.",
+      "challenges": [
+        "Developing an algorithm to calculate actual court utilization based on area, time, and availability.",
+        "Visualizing the data in a way that was both informative but also did not overwhelm users with too much data at once.",
+        "Ensuring that the dashboard was intuitive for users with varying levels of technical expertise."
+      ],
+      "tools": ["figma", "firebase", "nextjs"]
+    },
+    "msScraper": {
+      "name": "Database of All Players",
+      "description": "I developed a Python-based web scraper where I could define specific criteria to collect data. The script systematically went through all registered users on mafiaspillet.no, formatted the information in an organized manner, and automatically uploaded it to a GitHub repository. To visualize the data, I created a website that fetched the information directly from GitHub and presented it in a user-friendly way.",
+      "challenges": [
+        "I spent most of the time figuring out how to identify all registered users. After much research and analysis of network traffic, I discovered that when the website updates, a GET request is sent that returns a list of all usernames in plain text. Eventually, I automated the process by fetching this list directly and letting the program go through each profile to collect the necessary information."
+      ],
+      "tools": ["javascript", "python"]
+    },
+    "unity": {
+      "name": "Goblin Hunter",
+      "description": "I had the elective course 'Game Design' where we were tasked with developing a game in Unity, programmed in C#. Together with a classmate, we created a game inspired by Vampire Survivor. In the game, you move around, fight monsters, find new weapons, and level up to become stronger.",
+      "challenges": [
+        "Exported animations from an animation tool we used worked poorly in Unity, which forced us to create animations via code, a time-consuming process.",
+        "Lack of collision between different actors in the game led to situations where the player character could end up on top of enemies.",
+        "Creating custom 3D models and textures took longer, but gave us better control over the game's design."
+      ],
+      "tools": ["csharp"]
+    },
+    "dashboard": {
+      "name": "Dashboard",
+      "description": "I developed a prototype for a dashboard that visualizes extensive datasets collected from a website without an available API. By building my own data collection solution based on web scraping, I was able to gather and structure the data before storing it in MongoDB. The resulting dashboard offers an intuitive and minimalist user interface that makes it easy for the user to explore and understand the gathered information.",
+      "challenges": [
+        "Finding a good way to present all the data so that it was both intuitive for users and avoided unnecessary visual clutter.",
+        "Developing an efficient web scraping solution that could handle the desired data collection.",
+        "Designing a minimalist interface that still communicated all the necessary information."
+      ],
+      "tools": ["figma", "javascript"]
+    },
+    "keyScraper": {
+      "name": "Key Scraper",
+      "description": "I developed a Python-based bot that continuously scans up to 20 Twitch chats and new Reddit posts to identify product keys for the game Path Of Exile 2. Using advanced text processing techniques, the bot detects potential keys in real-time. When a key is found, the bot immediately attempts to redeem it. If the redemption fails, the bot logs the error and continues the search. The bot is designed to be robust and efficient.",
+      "challenges": [
+        "Automating the redemption process using cookies and session ID.",
+        "Ensuring that the bot could handle different formats and placements of product keys in text.",
+        "Filtering out Reddit posts that were unlikely to contain keys."
+      ],
+      "tools": ["python", "javascript"]
+    },
+    "chatLogs": {
+      "name": "Chat Logs",
+      "description": "I developed a website where users could search for their usernames and see all the messages they had sent in the chat of a specific live streamer. The functionality included support for emotes, users' personal username colors, emotes, date selection, and a clear indication of which messages were replies to others. My goal was to create a visually appealing message log that recreated the feeling of a Twitch chat. This was intended to make it easy for users to understand and navigate their logs.",
+      "challenges": [
+        "Handling data collection with 15-40 messages per second in real-time and efficiently storing over a million messages in the database.",
+        "Integrating emotes from multiple third-party providers seamlessly across platforms.",
+        "Recreating the Twitch chat experience with user colors and chat features."
+      ],
+      "tools": ["reactjs", "mongodb"]
+    },
+    "msExtension": {
+      "name": "Browser Extension",
+      "description": "It is a browser game that has a problem where many settings and information are hidden, making it difficult to find. This extension makes it easier by retrieving relevant information so that you always have it readily available. It is placed off-screen but has a small indicator arrow that you can click. When you do, the information slides in as a sidebar on the side of the screen.",
+      "tools": ["javascript"]
+    }
+  }
+}

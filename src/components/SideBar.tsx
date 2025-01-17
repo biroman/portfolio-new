@@ -1,7 +1,7 @@
 import React from "react";
 import avatar from "../assets/avatar2.png";
 import { NavLink } from "react-router-dom";
-import "../../public/il8n";
+import "../il8n";
 import { useTranslation } from "react-i18next";
 
 interface SideBarProps {

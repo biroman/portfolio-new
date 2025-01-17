@@ -1,0 +1,82 @@
+{
+  "sidebar": {
+    "about": "Om",
+    "portfolio": "Portefølje",
+    "contact": "Kontakt",
+    "footer": "GitHub link for denne siden"
+  },
+  "about": {
+    "title1": "Jeg er ",
+    "title2": "UX Designer & Front-End Utvikler",
+    "description": "Jeg er en nyutdannet interaktiv designer med en stor interesse for UX-design. Gjennom studiene har jeg fått solid erfaring med reelle prosjekter for ulike bedrifter, noe som har gitt meg en god forståelse for brukerens behov og designprosessen. Jeg trives med utfordrende oppgaver som bidrar til min faglige utvikling og setter stor pris på å være en del av et kreativt team.",
+    "skills": "Mine Ferdigheter"
+  },
+  "projects": {
+    "title": "Noen Av Mine Prosjekter",
+    "viewWebsite": "Åpne nettside",
+    "challenges": "Utfordringer",
+    "easyplay": {
+      "name": "Bachelor Prosjekt",
+      "description": "Vi utviklet et intuitivt dashboard som gir baneadministratorer full oversikt over baneutnyttelsen. Ved hjelp av avansert algoritme og klare visualiseringer, som stolpediagrammer og tabeller, får brukerne raskt innsikt i aktivitetsdata. Designet er optimalisert for enkel navigasjon og følger EasyPlays visuelle identitet. Målet vårt var å skape et brukervennlig verktøy som forenkler administrasjonen og gir datadrevet beslutningsgrunnlag.",
+      "challenges": [
+        "Å utvikle en algoritme for å beregne faktisk baneutnyttelse basert på areal, tid og tilgjengelighet.",
+        "Å visualisere dataene på en måte som var både informativ, men samtidig ikke vise for mye data på en gang.",
+        "Å sikre at dashbordet var intuitivt for brukere med varierende teknisk kompetanse var viktig."
+      ],
+      "tools": ["figma", "firebase", "nextjs"]
+    },
+    "msScraper": {
+      "name": "Database av Alle Spillere",
+      "description": "Jeg utviklet en Python-basert webskraper hvor jeg kunne definere spesifikke kriterier for å samle inn data. Skriptet gikk systematisk gjennom alle registrerte brukere på mafiaspillet.no, formaterte informasjonen på en ryddig måte og lastet den automatisk opp til en GitHub-repository. For å visualisere dataene, opprettet jeg en nettside som hentet informasjonen direkte fra GitHub og presenterte den på en brukervennlig måte.",
+      "challenges": [
+        "Jeg brukte mest tid på å finne ut hvordan jeg kunne identifisere alle registrerte brukere. Etter mye undersøkelser og analyser av nettverkstrafikken oppdaget jeg at når nettsiden oppdateres, blir det sendt en GET-forespørsel som returnerer en liste over alle brukernavn i ren tekst. Til slutt automatiserte jeg prosessen ved å hente denne listen direkte, og lot programmet gå gjennom hver enkelt profil for å samle inn den nødvendige informasjonen."
+      ],
+      "tools": ["javascript", "python"]
+    },
+    "unity": {
+      "name": "Goblin Hunter",
+      "description": "Jeg hadde valgfaget 'Spilldesign' hvor vi skulle utvikle et spill i Unity, programmert i C#. Sammen med en studiekamerat laget vi et spill inspirert av Vampire Survivor. I spillet beveger du deg rundt, bekjemper monstre, finner nye våpen og levler opp for å bli sterkere.",
+      "challenges": [
+        "Eksporterte animasjoner fra et animasjonsverktøy vi brukte fungerte dårlig i Unity, noe som førte til at vi måtte lage animasjoner via kode, en litt tidkrevende prosess",
+        "Manglende kollisjon mellom ulike actors i spillet førte til situasjoner der spillfiguren kunne havne oppå fiender.",
+        "Å lage egendefinerte 3D-modeller og teksturer tok lengre tid, men ga oss bedre kontroll over spillets design."
+      ],
+      "tools": ["csharp"]
+    },
+    "dashboard": {
+      "name": "Dashboard",
+      "description": "Jeg har utviklet en prototype for et dashboard som visualiserer omfattende datasett hentet fra en nettside uten tilgjengelig API. Ved å bygge en egen datainnsamlingsløsning basert på web skraping, klarte jeg å samle inn og strukturere dataene før de ble lagret i MongoDB. Det resulterende dashbordet tilbyr en intuitiv og minimalistisk brukergrensesnitt som gjør det enkelt for brukeren å utforske og forstå den innhentede informasjonen.",
+      "challenges": [
+        "Finne en god måten å presentere all data på, slik at det både ble intuitivt for brukerne og unngikk unødvendig visuell støy.",
+        "Å utvikle en effektiv web skraping-løsning som kunne håndtere den ønskede datainnsamlingen.",
+        "Å designe et minimalistisk grensesnitt som fortsatt formidlet all nødvendig informasjon."
+      ],
+      "tools": ["figma", "javascript"]
+    },
+    "keyScraper": {
+      "name": "Key Scraper",
+      "description": "Jeg har utviklet en Python-basert bot som kontinuerlig skanner opptil 20 Twitch-chat'er og nye Reddit-innlegg for å identifisere produktnøkler til spillet Path Of Exile 2. Ved å bruke avanserte tekstbehandlingsteknikker, oppdager boten potensielle nøkler i sanntid. Når en nøkkel er funnet, forsøker boten umiddelbart å innløse den. Ved mislykkede innløsninger logger boten feilen og fortsetter søket. Boten er designet for å være robust og effektiv.",
+      "challenges": [
+        "Å automatisere innløsningsprosessen med bruk av cookies og session-ID.",
+        "Å sikre at boten kunne håndtere ulike formater og plasseringer av produktnøkler i tekst.",
+        "Å filtrere ut Reddit poster som mest sannsynlig ikke ville inneholde nøkler."
+      ],
+      "tools": ["python", "javascript"]
+    },
+    "chatLogs": {
+      "name": "Chat Logs",
+      "description": "Jeg utviklet en nettside der brukere kunne søke opp brukernavnene sine og se alle meldingene de hadde sendt i chatten til en spesifikk live streamer. Funksjonaliteten inkluderte støtte for emotes, brukerns personlige brukernavnfarger, emotes, dato-valg og en tydelig indikasjon på hvilke meldinger som var svar ('replies') til andre. Målet mitt var å skape en visuelt pen meldingslogg som gjenskaper følelsen av Twitch-chat. Dette skulle gjøre det enkelt for brukerne å forstå og navigere i loggene sine.",
+      "challenges": [
+        "Å håndtere datainnsamling med 15-40 meldinger per sekund i sanntid og lagre over én million meldinger effektivt i databasen.",
+        "Å integrere emotes fra flere tredjepartsleverandører sømløst på tvers av plattformene.",
+        "Å gjenskape en tilsvarende Twitch-chat opplevelsen med brukerfarger og chat funksjoner."
+      ],
+      "tools": ["reactjs", "mongodb"]
+    },
+    "msExtension": {
+      "name": "Browser Extension",
+      "description": "Det er et nettleserspill som har et problem der mange innstillinger og informasjon er skjult, og det kan være vanskelig å finne. Denne utvidelsen gjør det lettere ved å hente frem relevant informasjon, slik at du alltid har den lett tilgjengelig. Den er plassert utenfor skjermen, men har en liten indikatorpil som du kan klikke på. Når du gjør det, glir informasjonen inn som en sidebar på siden av skjermen.",
+      "tools": ["javascript"]
+    }
+  }
+}

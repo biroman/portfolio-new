@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "public/il8n.js"]
+  "include": ["src", "src/il8n.ts"]
 }
