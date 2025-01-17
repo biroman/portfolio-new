@@ -12,7 +12,7 @@ i18n
       escapeValue: false,
     },
     resources: {
-      no: {
+      nb: {
         translation: {
           sidebar: {
             about: "Om",
